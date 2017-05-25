@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#66bde2</color>
+    <color name="colorTransparent">#969696</color>
+    <color name="colorTrans">#00000000</color>
+    <color name="colorAll">#FF637C</color>
+    <color name="colorStep">#ffffff</color>
+    <color name="colorLine">#c8c8c8</color>
+    <color name="colorLineHint">#969696</color>
+    <color name="colorHis">#66bde2</color>
+    <color name="colorButton">#CDE6E9</color>
+    <color name="colorHint">#9F5EE4</color>
+    <color name="colorRole">#E626E8</color>
+    <color name="colorRoles">#25D3E2</color>
+    <color name="colorMore">#FCB147</color>
+    <color name="colorLogin">#fd8698</color>
+    <color name="colorSet">#E6E6E6</color>
+    <color name="colorAdd">#F2F2F2</color>
+    <color name="colorMain">#1AA1AA</color>
+    <color name="colorText">#FFFFFFFF</color>
+    <color name="colorTextes">#F9F9F9</color>
+    <color name="lv_divider">#00000000</color>
+    <color name="colorContact">#EAF6F8</color>
+    <color name="colorToolbar">#6DACB1</color>
+    <color name="colorHisSize">#72CDD5</color>
+    <color name="colorCircle">#d5eef0</color>
+    <color name="colorAddContact">#747474</color>
+    <color name="colorDetection">#55CDD8</color>
+
+    <color name="grass">#ff46d387</color>
+    <color name="white">#FFFFFF</color>
+
+
+</resources>

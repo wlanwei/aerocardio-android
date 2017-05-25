@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.AeroCardioSettingActivity">
+
+    <ImageView
+        android:id="@+id/aerocardio_setting_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:src="@mipmap/b_close" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/l_login" />
+
+    <ListView
+        android:id="@+id/aerocardio_setting_list_dev"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/scanlist_background"
+        android:padding="6dp" />
+
+    <RelativeLayout
+        android:id="@+id/aerocardio_setting_ring_search"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/searching"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorLogin" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aerocardio_setting_desc1"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aerocardio_setting_desc2"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/aerocardio_setting_btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/scan_background"
+        android:text="@string/rescan"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

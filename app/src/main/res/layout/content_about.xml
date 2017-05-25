@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorText"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.uteamtec.heartcool.activity.AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+    <RelativeLayout style="@style/titleRelative">
+
+        <ImageView
+            android:id="@+id/activity_about_ll_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@mipmap/s_return" />
+
+        <TextView
+            style="@style/setTitleText"
+            android:text="@string/about" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/l_login" />
+
+        <TextView
+            style="@style/aboutText"
+            android:text="@string/product"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/activity_about_tv_version"
+            style="@style/aboutText" />
+
+        <TextView
+            android:id="@+id/activity_about_tv_version_num"
+            style="@style/aboutText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/aboutText"
+            android:autoLink="web"
+            android:maxLines="2"
+            android:text="@string/detail" />
+
+        <TextView
+            style="@style/aboutText"
+            android:text="@string/service" />
+
+        <TextView
+            style="@style/aboutText_content"
+            android:autoLink="phone"
+            android:text="@string/service_phone" />
+    </LinearLayout>
+
+</LinearLayout>

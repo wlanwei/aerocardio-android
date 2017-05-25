@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon_dev"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/dev_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/icon_dev"
+        android:padding="10dp"
+        android:textColor="@color/grass"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dev_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/dev_name"
+        android:padding="10dp"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iconConnected"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <com.uteamtec.heartcool.views.widget.RunningIconView
+        android:id="@+id/iconRunning"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <com.uteamtec.heartcool.views.widget.CheckIconView
+        android:id="@+id/iconCheck"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

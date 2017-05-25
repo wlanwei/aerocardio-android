@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.uteamtec.aerocardio.views.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/l_login" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="用户名"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:maxLines="1" />
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_user_name"
+            android:background="#959595" />
+
+        <EditText
+            android:id="@+id/et_pass_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v1"
+            android:background="@null"
+            android:hint="密码"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:singleLine="true" />
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_pass_word"
+            android:background="#959595" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="登   录"
+
+        android:textSize="20sp" />
+
+    <com.uteamtec.heartcool.views.widget.RunningIconView
+        android:id="@+id/loginRunningIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:foregroundGravity="center"
+        android:visibility="invisible" />
+
+    <com.uteamtec.heartcool.views.widget.CheckIconView
+        android:id="@+id/loginCheckIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="50dp"
+        android:foregroundGravity="center"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragment.PlaceholderAeroCardioFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="9dp">
+
+        <com.uteamtec.heartcool.views.widget.EcgView
+            android:id="@+id/fragment_aerocardio_view_ecg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/fragment_aerocardio_ll_reconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMain"
+                android:text="正在重新连接"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animationResolution="40"
+                android:indeterminateDuration="1000" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_aerocardio_tv_hr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="000"
+                    android:textColor="@color/colorDetection"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BPM"
+                    android:textColor="@color/colorHisSize"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/InstantHeartRate"
+                android:textColor="@color/colorHisSize"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransparent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_aerocardio_tv_hr_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="000"
+                    android:textColor="@color/colorDetection"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BPM"
+                    android:textColor="@color/colorHisSize"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/avaghr"
+                android:textColor="@color/colorHisSize"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransparent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_aerocardio_tv_br"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="000"
+                    android:textColor="@color/colorDetection"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BPM"
+                    android:textColor="@color/colorHisSize"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/NormalRhythm"
+                android:textColor="@color/colorHisSize"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransparent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_aerocardio_tv_hr_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="000"
+                    android:textColor="@color/colorDetection"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="@color/colorHisSize"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/heart_hr"
+                android:textColor="@color/colorHisSize"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp">
+
+        <com.uteamtec.heartcool.views.widget.WarningView
+            android:id="@+id/fragment_aerocardio_wv_hard"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/fragment_aerocardio_tx_timer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@color/colorHisSize"
+            android:textSize="50sp" />
+
+        <com.uteamtec.heartcool.views.widget.WarningView
+            android:id="@+id/fragment_aerocardio_wv_soft"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/fragment_aerocardio_iv_online"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:padding="6dp"
+            android:src="@drawable/dev_off"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/fragment_aerocardio_btn_stop"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_bg_yellow"
+            android:onClick="doStop"
+            android:text="@string/endTest"
+            android:textColor="@color/colorStep"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/fragment_aerocardio_btn_start"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:onClick="doStuff"
+            android:text="@string/startTest"
+            android:textColor="@color/colorStep"
+            android:textSize="20sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/changeimagebackgroundtrue" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/changeimagebackground" />
+
+    </LinearLayout>
+
+</LinearLayout>

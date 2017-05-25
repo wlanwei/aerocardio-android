@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorText"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorMain">
+        <LinearLayout
+            android:id="@+id/emer_contact_add_ll_return"
+            style="@style/titleLayout">
+        <ImageView
+            android:id="@+id/emer_contact_add_iv_close"
+            style="@style/titleImage"
+            android:src="@mipmap/s_return"
+            android:layout_marginLeft="@dimen/margin"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/emer_contact_add_tv_title"
+            style="@style/setTitleText"
+            android:text="@string/addContact"
+             />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <LinearLayout
+        android:id="@+id/emer_contact_add_ll_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin"
+        android:padding="@dimen/margin"
+        android:background="@drawable/add_bg"
+        android:layout_centerInParent="true">
+    <LinearLayout
+        style="@style/emerContactlsLayout">
+        <ImageView
+            android:layout_width="@dimen/erem_icon"
+            android:layout_height="@dimen/erem_icon"
+            android:src="@mipmap/e_avatar"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_left"/>
+        <EditText
+            android:id="@+id/emer_contact_add_et_name"
+            style="@style/emerContactAdd"
+            android:singleLine="true"
+            android:hint="请输入联系人姓名"/>
+    </LinearLayout>
+    <LinearLayout style="@style/emerContactlsLayout">
+        <ImageView
+            android:layout_width="@dimen/erem_icon"
+            android:layout_height="@dimen/erem_icon"
+            android:src="@mipmap/e_phone"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_left"/>
+
+        <EditText
+            android:id="@+id/emer_contact_add_et_phone"
+            style="@style/emerContactAdd"
+            android:singleLine="true"
+            android:hint="请输入联系人电话"/>
+    </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+       >
+    <Button
+        android:id="@+id/emer_contact_add_bt_sure"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/adds"
+        android:textColor="@color/colorText"
+        android:background="@drawable/add_contact_bg"
+        android:layout_margin="@dimen/fab_margin"
+        />
+    </LinearLayout>
+</LinearLayout>

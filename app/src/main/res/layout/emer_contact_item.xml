@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="@dimen/margin"
+    android:background="@drawable/add_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/erem_icon"
+                android:layout_height="@dimen/erem_icon"
+                android:layout_gravity="center"
+                android:src="@mipmap/e_avatar" />
+
+            <TextView
+                android:id="@+id/emer_contact_tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:text="张三"
+                android:textColor="@color/colorAddContact"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/margin">
+
+            <ImageView
+                android:layout_width="@dimen/erem_icon"
+                android:layout_height="@dimen/erem_icon"
+                android:layout_gravity="center"
+                android:src="@mipmap/e_phone" />
+
+            <TextView
+                android:id="@+id/emer_contact_tv_item_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:text="13880159400"
+                android:textColor="@color/colorAddContact" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/emer_contact_tv_item_checkBox"
+        style="@style/lanuageCheckbox" />
+</RelativeLayout>

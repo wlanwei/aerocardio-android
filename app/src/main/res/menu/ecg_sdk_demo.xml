@@ -1,0 +1,78 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mhealth365.ecg.EcgSdkActivity" >
+    <!-- EcgDataSourceReviewActivity显示记录实例的演示-->
+<item
+        android:id="@+id/printrecord"
+       android:showAsAction="never"
+        android:visible="false"
+        android:title="record"/>
+<item
+        android:id="@+id/datasource"
+        android:showAsAction="never"
+        android:title="数据回顾（演示）"/>
+<item
+        android:id="@+id/smallBrowser"
+        android:showAsAction="never"
+        android:title="无背景网格模式（演示）"/>
+<!-- <item
+        android:id="@+id/set_screen_3_5"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="3.5"/> -->
+<!-- <item
+        android:id="@+id/set_screen_4_0"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="4.0"/> -->
+<item
+        android:id="@+id/set_screen_4_3"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="4.3"/>
+<item
+        android:id="@+id/set_screen_4_7"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="4.7"/>
+<item
+        android:id="@+id/set_screen_5_0"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="5.0"/>
+<item
+        android:id="@+id/set_screen_5_5"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="5.5"/>
+<item
+        android:id="@+id/set_screen_6_0"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="6.0"/>
+<!-- <item
+        android:id="@+id/set_screen_7_0"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="7.0"/>
+<item
+        android:id="@+id/set_screen_8_0"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="8.0"/>
+<item
+        android:id="@+id/set_screen_9_0"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="9.0"/>
+<item
+        android:id="@+id/set_screen_10_0"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="10.0"/>
+<item
+        android:id="@+id/set_screen_12_0"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="12.0"/> -->
+</menu>

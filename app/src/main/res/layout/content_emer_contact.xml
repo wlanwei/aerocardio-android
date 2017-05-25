@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_emerContact_sl_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorText"
+    android:orientation="vertical"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.uteamtec.heartcool.activity.EmerContactActivity"
+    tools:showIn="@layout/activity_emer_contact"
+    android:fitsSystemWindows="true">
+
+
+
+        <RelativeLayout
+            style="@style/titleRelative">
+            <LinearLayout
+                android:id="@+id/activity_emerContact_ll_return"
+                style="@style/titleLayout">
+
+                <ImageView
+                    style="@style/titleImage"
+                    android:src="@mipmap/s_return"
+                   />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_emerContact_tv_contact"
+                style="@style/setTitleText"
+                android:text="@string/emerContact" />
+
+            <LinearLayout
+                android:id="@+id/activity_emerContact_ll_addContact"
+                style="@style/titleLayoutes">
+                <ImageView
+                    style="@style/titleImages"
+                    android:src="@mipmap/s_add_contact" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/activity_emerContact_lv_lvEmerContact"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:layout_margin="@dimen/fab_margin"
+            android:divider="@color/lv_divider"
+            android:dividerHeight="16dp"></ListView>
+
+<LinearLayout
+    style="@style/sureLayout"
+    android:layout_marginTop="0dp"
+   >
+    <Button
+        android:id="@+id/activity_emerContact_bt_sure"
+       style="@style/sureButton"
+        android:text="@string/sure"
+
+        />
+</LinearLayout>
+</LinearLayout>

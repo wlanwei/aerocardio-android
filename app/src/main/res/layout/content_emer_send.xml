@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.uteamtec.heartcool.activity.EmerSendActivity"
+    tools:showIn="@layout/activity_emer_send"
+    android:background="@color/colorText"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+        <RelativeLayout
+           style="@style/titleRelative">
+
+            <LinearLayout
+                android:id="@+id/activity_emer_send_ll_return"
+                style="@style/titleLayout"
+                android:onClick="wayReturn">
+
+                <ImageView
+                    style="@style/titleImage"
+                    android:src="@mipmap/s_return"
+                   />
+            </LinearLayout>
+
+            <TextView
+                style="@style/setTitleText"
+                android:text="@string/emerSend"
+                 />
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+    <RelativeLayout
+        style="@style/settingRelative">
+        <TextView
+            style="@style/emerTextView"
+            android:text="@string/sendSms"/>
+        <CheckBox
+            android:id="@+id/activity_emer_send_cb_send"
+            style="@style/lanuageCheckbox" />
+    </RelativeLayout>
+    <TextView
+        style="@style/settingSep" />
+    <RelativeLayout
+        style="@style/settingRelative">
+        <TextView
+            style="@style/emerTextView"
+            android:text="@string/callPhone"/>
+        <CheckBox
+            android:id="@+id/activity_emer_send_cb_phone"
+            style="@style/lanuageCheckbox" />
+    </RelativeLayout>
+    <TextView
+        style="@style/settingSep" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/sureLayout">
+    <Button
+        android:id="@+id/activity_emer_send_bt_sure"
+        style="@style/sureButton"
+       android:text="@string/sure"/>
+    </LinearLayout>
+</LinearLayout>

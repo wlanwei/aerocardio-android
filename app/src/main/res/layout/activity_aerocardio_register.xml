@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.AeroCardioRegisterActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/aerocardio_register_iv_back"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:padding="16dp"
+                    android:src="@mipmap/l_return" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/registers"
+                    android:textColor="@color/colorStep"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="130dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="6sp"
+                android:text="@string/username"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/aerocardio_register_tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTrans"
+                android:hint="@string/inputUsername"
+                android:singleLine="true"
+                android:textColor="@color/colorAddContact"
+                android:textColorHint="@color/colorLineHint"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_marginRight="6sp"
+                        android:text="@string/verifition"
+                        android:textColor="@color/colorMain"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/aerocardio_register_tv_verify"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorTrans"
+                        android:hint="@string/inputVerify"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAddContact"
+                        android:textColorHint="@color/colorLineHint"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorLine" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/aerocardio_register_btn_send_verify"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/register_back_select"
+                android:text="@string/sendVerify"
+                android:textColor="@color/colorStep"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/aerocardio_register_btn_next"
+            style="@style/sureButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:text="@string/nextStep" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

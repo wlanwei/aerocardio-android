@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting_sl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorText"
+    android:baselineAligned="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.uteamtec.heartcool.activity.SettingActivity">
+
+    <RelativeLayout style="@style/titleRelative">
+
+        <LinearLayout
+            android:id="@+id/activity_setting_ll_close"
+            style="@style/titleLayout">
+
+            <ImageView
+                android:id="@+id/activity_setting_iv_close"
+                style="@style/titleImage"
+                android:src="@mipmap/s_return" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/setTitleText"
+            android:text="@string/action_settings" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/settingSep"
+            android:layout_marginTop="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/activity_setting_rl_contact"
+            style="@style/settingRelative">
+
+            <LinearLayout style="@style/settingLayout">
+
+                <ImageView
+                    style="@style/settingIcon"
+                    android:src="@mipmap/s_emer_contact" />
+
+                <TextView
+                    android:id="@+id/activity_setting_tv_emerContact"
+                    style="@style/settingText"
+                    android:text="@string/emerContact" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/activity_setting_iv_eSkip"
+                    style="@style/settingImage" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView style="@style/settingSep" />
+
+        <RelativeLayout
+            android:id="@+id/activity_setting_rl_send"
+            style="@style/settingRelative">
+
+            <LinearLayout style="@style/settingLayout">
+
+                <ImageView
+                    style="@style/settingIcon"
+                    android:src="@mipmap/s_emer_siatuation" />
+
+                <TextView
+                    android:id="@+id/activity_setting_tv_emerSend"
+                    style="@style/settingText"
+                    android:text="@string/emerSend" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/activity_setting_iv_sSkip"
+                    style="@style/settingImage" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/settingSep"
+            android:layout_marginTop="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/activity_setting_rl_about"
+            style="@style/settingRelative">
+
+            <LinearLayout style="@style/settingLayout">
+
+                <ImageView
+                    style="@style/settingIcon"
+                    android:src="@mipmap/s_about" />
+
+                <TextView
+                    android:id="@+id/activity_setting_tv_about"
+                    style="@style/settingText"
+                    android:text="@string/about" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/activity_setting_iv_aSkip"
+                    style="@style/settingImage" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/settingSep"
+            android:layout_marginTop="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/activity_setting_rl_cache"
+            style="@style/settingRelative">
+
+            <LinearLayout
+                style="@style/settingLayout"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    style="@style/settingIcon"
+                    android:src="@mipmap/s_cache" />
+
+                <TextView
+                    style="@style/settingText"
+                    android:text="@string/cache" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/settingSep"
+            android:layout_marginTop="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/activity_setting_rl_personal"
+            style="@style/settingRelative">
+
+            <LinearLayout style="@style/settingLayout">
+
+                <ImageView
+                    style="@style/settingIcon"
+                    android:src="@mipmap/s_emer_contact" />
+
+                <TextView
+                    style="@style/settingText"
+                    android:text="@string/personal" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/settingSep"
+            android:layout_marginTop="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/sureLayout">
+
+        <Button
+            android:id="@+id/activity_setting_bt_exit"
+            style="@style/sureButton"
+            android:text="@string/exitAccount" />
+    </LinearLayout>
+</LinearLayout>

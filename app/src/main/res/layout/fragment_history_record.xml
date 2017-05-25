@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <com.uteamtec.heartcool.user.ColorfulRingProgressView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:bgColor="@color/colorHint"
+            app:fgColorEnd="@color/colorRole"
+            app:fgColorStart="@color/colorRoles"
+            app:percent="100"
+            app:startAngle="0"
+            app:strokeWidth="4dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_history_tv_hr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="000"
+                    android:textColor="@color/colorDetection"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BPM"
+                    android:textColor="@color/colorHisSize"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/avaghr"
+                android:textColor="@color/colorHisSize"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <com.uteamtec.heartcool.user.ColorfulRingProgressView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:bgColor="@color/colorHint"
+            app:fgColorEnd="@color/colorRole"
+            app:fgColorStart="@color/colorRoles"
+            app:percent="100"
+            app:startAngle="0"
+            app:strokeWidth="4dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_history_tv_hr_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="000"
+                    android:textColor="@color/colorDetection"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="@color/colorHisSize"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/heart_hr"
+                android:textColor="@color/colorHisSize"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <com.uteamtec.heartcool.user.ColorfulRingProgressView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:bgColor="@color/colorHint"
+            app:fgColorEnd="@color/colorRole"
+            app:fgColorStart="@color/colorRoles"
+            app:percent="100"
+            app:startAngle="0"
+            app:strokeWidth="4dp" />
+
+
+        <LinearLayout
+            android:id="@+id/fragment_history_ll_result"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击进入"
+                android:textColor="@color/colorHisSize"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="测评详情"
+                android:textColor="@color/colorHisSize"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

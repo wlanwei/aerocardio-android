@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.AeroCardioRegisterNextActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/aerocardio_register_next_iv_back"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:padding="16dp"
+                    android:src="@mipmap/l_return" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/registers"
+                    android:textColor="@color/colorStep"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="130dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="6sp"
+                android:text="@string/passWord"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <!--<ImageView
+                android:layout_width="@dimen/erem_icones"
+                android:layout_height="@dimen/erem_icones"
+                android:layout_gravity="bottom"
+                android:src="@mipmap/r_password" />-->
+
+            <EditText
+                android:id="@+id/aerocardio_register_next_tv_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTrans"
+                android:hint="@string/inputPassword"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/colorAddContact"
+                android:textColorHint="@color/colorLineHint"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="6sp"
+                android:gravity="left|bottom"
+                android:text="@string/passWord"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <!--<ImageView
+                android:layout_width="@dimen/erem_icones"
+                android:layout_height="@dimen/erem_icones"
+                android:layout_gravity="bottom"
+                android:src="@mipmap/r_passwords" />-->
+
+            <EditText
+                android:id="@+id/aerocardio_register_next_tv_password_again"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTrans"
+                android:hint="@string/inputPasswordAgain"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/colorAddContact"
+                android:textColorHint="@color/colorLineHint"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorLine" />
+
+        <Button
+            android:id="@+id/aerocardio_register_next_btn_finish"
+            style="@style/sureButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:text="@string/nextStep" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
